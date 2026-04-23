@@ -32,6 +32,18 @@ With fuel price volatility and high inflation (12.6% in 2024), delivery delays i
 
 ---
 
+## 📂 Project Structure
+
+├── src/ingestion/          # Extraction scripts (Python) to pull CSVs into the Cloud.
+├── dbt_project/            # Main transformation logic (ELT) using SQL.
+│   ├── models/
+│   │   ├── bronze/         # Landing area: Raw data with ingestion metadata.
+│   │   ├── silver/         # Transformation area: Cleaning & Quality Gates.
+│   │   └── gold/           # Analytics area: Business-ready joined tables.
+├── data/raw_samples/       # Small subsets of data for local testing (Sample only).
+
+---
+
 ## 🏗️ The Medallion Pipeline
 
 ### 1. Bronze Zone (Raw & Immutable)
