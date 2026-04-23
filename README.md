@@ -99,6 +99,3 @@ Fuel price volatility and persistent inflation (12.6% in 2024) have contributed 
 - `.gitignore` prevents accidental commits of sensitive files (`service_account_keys.json`, `.env`).  
 - Branch protection on `main` enforces code quality via Pull Requests.  
 
----
-
-This version trims repetition, improves readability, and emphasizes the professional architecture and governance aspects. Would you like me to also create a **visual timeline** of the Medallion pipeline stages (Bronze → Silver → Gold) for quick reference?
